@@ -295,7 +295,7 @@ variable "create_monitoring_role" {
 variable "monitoring_interval" {
   description = "Monitoring interval for Enhanced Monitoring"
   type        = number
-  default     = 60S
+  default     = 60
 }
 
 variable "monitoring_role_name" {
