@@ -170,14 +170,14 @@ variable "engine_version_mysql" {
 variable "instance_class" {
   description = "RDS Instance class"
   type        = string
-  default     = "db.m6g.large"
+  default     = "db.m5d.large"
 }
 
 
 variable "allocated_storage" {
   description = "RDS Allocated Storage"
   type        = number
-  default     = 50
+  default     = 80
 }
 
 
