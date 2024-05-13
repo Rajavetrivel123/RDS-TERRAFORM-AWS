@@ -177,14 +177,14 @@ variable "instance_class" {
 variable "allocated_storage" {
   description = "RDS Allocated Storage"
   type        = number
-  default     = 100
+  default     = 50
 }
 
 
 variable "max_allocated_storage" {
   description = "RDS Max allocated storage"
   type        = number
-  default     = 1000
+  default     = 100
 }
 
 variable "db_name" {
@@ -246,7 +246,7 @@ variable "create_cloudwatch_log_group" {
 variable "backup_retention_period" {
   description = "How long to keep backups for (in days)"
   type        = number
-  default     = 7
+  default     = 14
 }
 
 variable "skip_final_snapshot" {
@@ -295,7 +295,7 @@ variable "create_monitoring_role" {
 variable "monitoring_interval" {
   description = "Monitoring interval for Enhanced Monitoring"
   type        = number
-  default     = 60
+  default     = 120
 }
 
 variable "monitoring_role_name" {
